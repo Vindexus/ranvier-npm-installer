@@ -14,6 +14,7 @@ if (!bundleName) {
 }
 
 const sourceDir = path.resolve(projectDir, 'node_modules', bundleName);
+console.log('sourceDir', sourceDir);
 const packageJSON = JSON.parse(fs.readFileSync(path.join(sourceDir, 'package.json')));
 
 console.log('bundleName', bundleName);
